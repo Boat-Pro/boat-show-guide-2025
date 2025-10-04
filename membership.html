@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Membership - Boat Show Insider | $9.99/month</title>
+    <meta name="description" content="Join 2,000+ serious boaters. Get exclusive deals, insider reports, and expert guidance for just $9.99/month.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/boat-show-guide-2025/membership.html">
+    <meta property="og:title" content="Premium Boat Show Insider Membership">
+    <meta property="og:description" content="Exclusive deals, insider reports, and expert guidance for serious boaters.">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA_ID');
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .membership-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .membership-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./assets/images/boat-hero.jpg') center/cover;
+            opacity: 0.1;
+        }
+
+        .membership-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .membership-badge {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+
+        .membership-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .membership-hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .price-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(251, 191, 36, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-strike {
+            text-decoration: line-through;
+            opacity: 0.6;
+            font-size: 1.5rem;
+        }
+
+        .price-current {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fbbf24;
+            margin: 1rem 0;
+        }
+
+        .price-trial {
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .benefits-section {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-value {
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin: 0.5rem 0;
+        }
+
+        .testimonials-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-section {
+            padding: 6rem 0;
+            background: #f8fafc;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+            border: 2px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #2563eb;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 1.125rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: #64748b;
+            margin-top: 1rem;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .guarantee-section {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .guarantee-badge {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .subscribe-btn {
+            background: white;
+            color: #1e40af;
+            padding: 1.5rem 3rem;
+            border: none;
+            border-radius: 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .subscribe-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .trust-seals {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-seal {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .membership-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .membership-hero .subtitle {
+                font-size: 1.125rem;
+            }
+            
+            .price-current {
+                font-size: 2rem;
+            }
+            
+            .benefits-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/images/logo.png" alt="Boat Show Insider" class="logo">
+                <span class="logo-text">Boat Show Insider</span>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="membership-hero" id="pricing">
+        <div class="membership-content">
+            <div class="membership-badge">⚓ PREMIUM MEMBERSHIP</div>
+            <h1>Join 2,000+ Serious Boaters</h1>
+            <p class="subtitle">Get insider access, exclusive deals, and expert guidance to maximize your boating lifestyle</p>
+            
+            <div class="price-box">
+                <div class="price-strike">Regular: $19.99/month</div>
+                <div class="price-current">$9.99<span style="font-size: 1.5rem;">/month</span></div>
+                <div class="price-trial">First Month: Only $4.99</div>
+                <p style="margin-top: 1rem; opacity: 0.9;">Cancel anytime • 30-day money-back guarantee</p>
+            </div>
+            
+            <button class="subscribe-btn" onclick="startSubscription()">Join Premium Now</button>
+            
+            <div class="trust-seals">
+                <span class="trust-seal">🔒 Secure Payment</span>
+                <span class="trust-seal">✓ Cancel Anytime</span>
+                <span class="trust-seal">💰 Money-Back Guarantee</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You Get as a Premium Member</h2>
+                <p>Everything you need to save money and maximize your boating experience</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📰</div>
+                    <h3>Monthly Insider Newsletter</h3>
+                    <p>Deep-dive reports on boat shows, industry trends, and exclusive opportunities</p>
+                    <div class="benefit-value">Value: $47/month</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💎</div>
+                    <h3>Exclusive Member Pricing</h3>
+                    <p>Access to dealer-only discounts and clearance inventory before the public</p>
+                    <div class="benefit-value">Avg Savings: $3,500+</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Private Facebook Community</h3>
+                    <p>Network with 2,000+ passionate boaters, share tips, and get instant answers</p>
+                    <div class="benefit-value">Priceless</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎥</div>
+                    <h3>Video Masterclasses</h3>
+                    <p>150+ expert videos on negotiation, maintenance, navigation, and more</p>
+                    <div class="benefit-value">Value: $997</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔔</div>
+                    <h3>Real-Time Deal Alerts</h3>
+                    <p>Be the first to know about flash sales, repo deals, and liquidation events</p>
+                    <div class="benefit-value">Members save $5K+ avg</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📞</div>
+                    <h3>Priority Support</h3>
+                    <p>Direct access to our experts for questions, advice, and boat-buying guidance</p>
+                    <div class="benefit-value">Value: $297/month</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🗂️</div>
+                    <h3>Resource Library</h3>
+                    <p>Checklists, templates, contracts, and tools used by professional yacht brokers</p>
+                    <div class="benefit-value">Value: $497</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Show Prep Guides</h3>
+                    <p>Detailed preparation guides for every major boat show in North America</p>
+                    <div class="benefit-value">Save 20+ hours</div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Annual Summit Access</h3>
+                    <p>Invitation to our exclusive member-only summit with industry insiders</p>
+                    <div class="benefit-value">Value: $1,497</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #eff6ff; border-radius: 1rem;">
+                <h3 style="color: #1e40af; margin-bottom: 1rem;">Total Value: $3,932+/month</h3>
+                <h2 style="color: #10b981; font-size: 2.5rem;">Your Price: $9.99/month</h2>
+                <p style="color: #64748b;">That's 99.7% OFF retail value!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem;">What Members Are Saying</h2>
+            <p style="text-align: center; opacity: 0.9; margin-bottom: 3rem;">Join thousands of satisfied members</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The member pricing alone saved me $12,000 on my yacht purchase. This membership has paid for itself 100x over!"</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Captain Robert M.</strong><br>
+                        <small>Member since 2023</small>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The community is incredible. I've made lifelong boating friends and learned so much from experienced sailors."</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Jennifer K.</strong><br>
+                        <small>Member since 2022</small>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The video masterclasses taught me negotiation tactics that saved $8,500 at the Fort Lauderdale show. Best investment ever!"</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Mark T.</strong><br>
+                        <small>Member since 2024</small>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Deal alerts got me first access to a repo boat worth $85K for only $62K. This membership is pure gold."</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>David S.</strong><br>
+                        <small>Member since 2023</small>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"As a first-time buyer, the support team guided me through every step. I felt confident and informed throughout."</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Lisa H.</strong><br>
+                        <small>Member since 2024</small>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The monthly newsletter alone is worth way more than $9.99. The insider info is incredible and actionable."</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Tom W.</strong><br>
+                        <small>Member since 2022</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <div class="guarantee-badge">🛡️</div>
+            <h2>30-Day Money-Back Guarantee</h2>
+            <p style="font-size: 1.25rem; margin: 1rem 0;">Try the membership risk-free. If you don't love it, get a full refund within 30 days.</p>
+            <p style="opacity: 0.9;">No questions asked. No hassle. We're that confident you'll love it.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I cancel anytime?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! You can cancel your membership at any time with one click. No penalties, no questions asked. You'll continue to have access until the end of your current billing period.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if I'm not satisfied?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a 30-day money-back guarantee. If you're not completely satisfied, simply email us within 30 days for a full refund.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How much can I really save?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Our average member saves $5,000-$15,000 on their boat purchase using our negotiation tactics and member pricing. Many save much more on yacht purchases. The membership pays for itself with just one deal.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is this only for boat buyers?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Not at all! While boat buyers get incredible value, our content covers the entire boating lifestyle - maintenance, navigation, destinations, gear reviews, and the boating community. Current owners love the ongoing value.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I access member pricing?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Once you join, you'll receive a member ID card and access to our dealer network. Present your member credentials at participating dealers to receive exclusive pricing. We have partnerships with over 200 dealers nationwide.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What payment methods do you accept?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We accept all major credit cards (Visa, Mastercard, American Express, Discover) through our secure payment processor Stripe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem;">Ready to Join?</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Start saving thousands on your boating lifestyle today</p>
+            
+            <div style="background: rgba(255,255,255,0.2); border-radius: 1rem; padding: 2rem; max-width: 500px; margin: 0 auto 2rem; backdrop-filter: blur(10px);">
+                <div style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">$9.99/month</div>
+                <div style="background: #10b981; padding: 0.75rem 1.5rem; border-radius: 0.5rem; display: inline-block; margin-bottom: 1rem;">First Month Only $4.99</div>
+                <p>Over 2,000 active members • 4.9★ rating</p>
+            </div>
+            
+            <button class="subscribe-btn" onclick="startSubscription()">Start Your Membership Now</button>
+            
+            <div class="trust-seals">
+                <span class="trust-seal">🔒 SSL Secure</span>
+                <span class="trust-seal">✓ Cancel Anytime</span>
+                <span class="trust-seal">💰 30-Day Guarantee</span>
+                <span class="trust-seal">📧 Email Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Boat Show Insider</h4>
+                    <p>The premier membership for serious boaters who want to save money and maximize their boating lifestyle.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                        <li><a href="./terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@boatshowinsider.com</p>
+                    <p>Response time: Under 24 hours</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Boat Show Insider. All rights reserved.</p>
+                <p>Disclaimer: Results may vary. Savings examples represent actual member experiences but are not guaranteed.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    
+    <script>
+        function startSubscription() {
+            // Track subscription intent
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'begin_checkout', {
+                    currency: 'USD',
+                    value: 9.99,
+                    items: [{
+                        item_id: 'premium_membership',
+                        item_name: 'Premium Membership',
+                        price: 9.99
+                    }]
+                });
+            }
+            
+            // TODO: Replace with your actual Stripe payment link
+            // Get your payment link from: https://dashboard.stripe.com/payment-links
+            window.location.href = 'STRIPE_PAYMENT_LINK_HERE';
+        }
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.querySelector('.faq-answer');
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                document.querySelectorAll('.faq-question span').forEach(s => s.textContent = '+');
+                
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    this.querySelector('.faq-question span').textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
