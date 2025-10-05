@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get your free guide to the US Sail & Powerboat Show in Annapolis, MD. Essential dos and don'ts plus exclusive newsletter access.">
-    <title>Annapolis Boat Show Guide - Free PDF Download</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Main Landing Page -->
-    <div id="landing-page" class="page">
-        <div class="hero-section">
-            <div class="container">
-                <div class="header">
-                    <div class="icon-wrapper">
-                        <svg class="anchor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="5" r="3"></circle>
-                            <line x1="12" y1="8" x2="12" y2="21"></line>
-                            <path d="M5 13a7 7 0 0 0 14 0"></path>
-                            <line x1="8" y1="13" x2="16" y2="13"></line>
-                        </svg>
-                    </div>
-                    <h1 class="main-title">US Sail & Powerboat Show</h1>
-                    <p class="subtitle">Annapolis, Maryland</p>
-                    <p class="tagline">Your Essential Guide to the Show</p>
-                </div>
-
-                <div class="content-card">
-                    <div class="card-grid">
-                        <!-- Left Column - Benefits -->
-                        <div class="benefits-column">
-                            <h2 class="section-title">Get Your Free Insider Guide</h2>
-                            
-                            <div class="benefits-list">
-                                <div class="benefit-item">
-                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+git add .
+   git commit -m "Initial commit"
+   git push origin maina10 10 0 1 1-5.93-9.14"></path>
                                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                                     </svg>
                                     <div>
